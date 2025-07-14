@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8e691a80d6bf14275871a6c5a34af88b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - nextPrefab: {instanceID: 0}
+  - mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
+  - scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
