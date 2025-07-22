@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4510583839768556327}
   - component: {fileID: 8739271106691371682}
   - component: {fileID: 3372229090371600904}
-  - component: {fileID: 1162168219728601330}
   - component: {fileID: 5066868493085558008}
+  - component: {fileID: 8264993055575318014}
   m_Layer: 0
-  m_Name: Small Circle
+  m_Name: Cherry
   m_TagString: small-circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.883666, y: 4.5, z: 0}
-  m_LocalScale: {x: 0.58458, y: 0.58458, z: 0.58458}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1435901459259225544, guid: b73108c36d94c49a1b60a0340029b52a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,7 +117,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &1162168219728601330
+--- !u!114 &5066868493085558008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7518558482597850793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e691a80d6bf14275871a6c5a34af88b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextPrefab: {fileID: 7518558482597850793, guid: eb571d0d199eb4152946c54d27a667fa, type: 3}
+  mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
+  scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
+--- !u!58 &8264993055575318014
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,20 +166,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!114 &5066868493085558008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7518558482597850793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e691a80d6bf14275871a6c5a34af88b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextPrefab: {fileID: 7518558482597850793, guid: eb571d0d199eb4152946c54d27a667fa, type: 3}
-  mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
-  scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
+  m_Offset: {x: -0.40929556, y: -0.3765574}
+  m_Radius: 4.542054

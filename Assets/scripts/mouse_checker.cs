@@ -28,14 +28,15 @@ public class mouse_checker : MonoBehaviour
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(mouse.position.ReadValue());
         mousePosition.z = 0; // Set z to 0 for 2D
-        mousePosition.y = 4.5f; // Keep the circle at a fixed height
 
         GameObject chosenCirclePrefab = pick_random_circle();
+
+        Debug.Log(chosenCirclePrefab.transform.localScale.y);
 
         newObject = (GameObject)Instantiate(chosenCirclePrefab, mousePosition, transform.rotation);
         newObject.name = clickCounter.ToString(); // Set the name of the new circle to the click count
         newObject.GetComponent<Rigidbody2D>().gravityScale = 0; // Disable gravity initially
-        newObject.GetComponent<CircleCollider2D>().isTrigger = true; // Set the collider to trigger to avoid immediate collisions
+        newObject.GetComponent<Collider2D>().isTrigger = true; // Set the collider to trigger to avoid immediate collisions
 
     }
 
@@ -43,7 +44,7 @@ public class mouse_checker : MonoBehaviour
     {
         newObject.GetComponent<Rigidbody2D>().gravityScale = 1; // Enable gravity on the circle
         circleCreated = false; // Reset the flag to allow for new circle creation
-        newObject.GetComponent<CircleCollider2D>().isTrigger = false; // Disable trigger to allow for collisions
+        newObject.GetComponent<Collider2D>().isTrigger = false; // Disable trigger to allow for collisions
     }
 
     // Update is called once per frame
@@ -64,11 +65,11 @@ public class mouse_checker : MonoBehaviour
             else
             {
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(mouse.position.ReadValue());
-                mousePosition.z = 0; // Set z to 0 for 2D
-                mousePosition.y = 4.5f; // Keep the circle at a fixed height
+
+                mousePosition.y = 4.5f - newObject.transform.localScale.y; // Adjust y position based on circle size
 
                 if (newObject != null)
-                    newObject.transform.position = new Vector3(mousePosition.x, mousePosition.y, mousePosition.z);
+                    newObject.transform.position = new Vector3(mousePosition.x, mousePosition.y, 0.0f);
             }
         }
     }
