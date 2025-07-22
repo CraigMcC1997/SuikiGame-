@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8264993055575318014}
   m_Layer: 0
   m_Name: Cherry
-  m_TagString: small-circle
+  m_TagString: Cherry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   nextPrefab: {fileID: 7518558482597850793, guid: eb571d0d199eb4152946c54d27a667fa, type: 3}
   mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
   scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
+  Fail: {fileID: 6189733673904488233, guid: 60dcd7a87813b4ca9a8048f6cd1cc55b, type: 3}
 --- !u!58 &8264993055575318014
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -31,8 +31,6 @@ public class mouse_checker : MonoBehaviour
 
         GameObject chosenCirclePrefab = pick_random_circle();
 
-        Debug.Log(chosenCirclePrefab.transform.localScale.y);
-
         newObject = (GameObject)Instantiate(chosenCirclePrefab, mousePosition, transform.rotation);
         newObject.name = clickCounter.ToString(); // Set the name of the new circle to the click count
         newObject.GetComponent<Rigidbody2D>().gravityScale = 0; // Disable gravity initially

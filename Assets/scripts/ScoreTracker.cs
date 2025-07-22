@@ -14,19 +14,19 @@ public class ScoreTracker : MonoBehaviour
         ScoreText.text = "" + score.ToString();
     }
 
-    public void Small_Scored()
+    public void CherryScored()
     {
         score++;
         Scored();
     }
 
-    public void Big_Scored()
+    public void StrawberryScored()
     {
         score += 2; // Assuming big circles give double points
         Scored();
     }
 
-    public void Giant_Scored()
+    public void GrapeScored()
     {
         score += 4; // Assuming giant circles give quadruple points
         Scored();

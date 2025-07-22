@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8792724272754420002}
   m_Layer: 0
   m_Name: Strawberry
-  m_TagString: big-circle
+  m_TagString: Strawberry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,3 +168,4 @@ MonoBehaviour:
   nextPrefab: {fileID: 7518558482597850793, guid: 91e408f07eca3498c9fe8d3ee4de9f8e, type: 3}
   mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
   scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
+  Fail: {fileID: 6189733673904488233, guid: 60dcd7a87813b4ca9a8048f6cd1cc55b, type: 3}
