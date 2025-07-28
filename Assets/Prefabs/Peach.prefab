@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 8739271106691371682}
   - component: {fileID: 3372229090371600904}
   - component: {fileID: 1162168219728601330}
-  - component: {fileID: 8792724272754420002}
   m_Layer: 0
-  m_Name: Strawberry
-  m_TagString: Strawberry
+  m_Name: Peach
+  m_TagString: massive-circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 7518558482597850793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.95, y: 4.8, z: 0}
-  m_LocalScale: {x: 0.0881058, y: 0.0881058, z: 0.0881058}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.283616, y: 0.283616, z: 0.283616}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1530612216135577912, guid: b199e8a046127417fb4be30665cba61e, type: 3}
+  m_Sprite: {fileID: -6182139567355005811, guid: 92f1ca98dd3e2459bb5a6f5052b0bf6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,21 +150,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.16270956, y: -0.34112957}
-  m_Radius: 3.8652873
---- !u!114 &8792724272754420002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7518558482597850793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e691a80d6bf14275871a6c5a34af88b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextPrefab: {fileID: 7518558482597850793, guid: 91e408f07eca3498c9fe8d3ee4de9f8e, type: 3}
-  mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
-  scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
-  Fail: {fileID: 6189733673904488233, guid: 60dcd7a87813b4ca9a8048f6cd1cc55b, type: 3}
+  m_Offset: {x: -0.022357225, y: -0.92783976}
+  m_Radius: 3.37295
