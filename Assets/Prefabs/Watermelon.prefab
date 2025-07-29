@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1162168219728601330}
   m_Layer: 0
   m_Name: Watermelon
-  m_TagString: massive-circle
+  m_TagString: Watermelon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,5 +150,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.022357225, y: -0.92783976}
-  m_Radius: 3.37295
+  m_Offset: {x: -0.0386181, y: -0.81720084}
+  m_Radius: 3.673218

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8739271106691371682}
   - component: {fileID: 3372229090371600904}
   - component: {fileID: 1162168219728601330}
+  - component: {fileID: -8672993425784695397}
   m_Layer: 0
   m_Name: Pineapple
-  m_TagString: massive-circle
+  m_TagString: Pineapple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,5 +151,20 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.022357225, y: -0.92783976}
-  m_Radius: 3.37295
+  m_Offset: {x: -0.022357207, y: -1.143325}
+  m_Radius: 3.3044674
+--- !u!114 &-8672993425784695397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7518558482597850793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e691a80d6bf14275871a6c5a34af88b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextPrefab: {fileID: 7518558482597850793, guid: fe070630e5d524aa3a73341d223374b8, type: 3}
+  mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
+  scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}

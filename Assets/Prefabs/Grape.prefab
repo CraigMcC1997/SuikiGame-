@@ -132,7 +132,6 @@ MonoBehaviour:
   nextPrefab: {fileID: 7518558482597850793, guid: aa950581a3b534d909a4517ef3ae7e41, type: 3}
   mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
   scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
-  Fail: {fileID: 6189733673904488233, guid: 60dcd7a87813b4ca9a8048f6cd1cc55b, type: 3}
 --- !u!58 &2773032620160308052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,5 +166,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.06870595, y: -0.79011846}
-  m_Radius: 3.3086426
+  m_Offset: {x: 0.06870595, y: -0.6686466}
+  m_Radius: 3.7762592

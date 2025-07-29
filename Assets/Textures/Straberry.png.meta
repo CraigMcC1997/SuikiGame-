@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Straberry_0: -1530612216135577912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

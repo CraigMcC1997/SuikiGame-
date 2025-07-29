@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dekopon_0: -3211694438994037640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
