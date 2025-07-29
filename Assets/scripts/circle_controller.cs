@@ -16,32 +16,21 @@ public class circle_controller : MonoBehaviour
     void create_next_circle()
     {
         int num = mouseChecker.GetComponent<mouse_checker>().clickCounter++;
-        Vector3 position = transform.position;
-        var newObject = (GameObject)Instantiate(nextPrefab, position, Quaternion.identity);
-        newObject.name = num.ToString(); // Set the name of the new bigger circle
+        var newObject = (GameObject)Instantiate(nextPrefab, transform.position, Quaternion.identity);
+        newObject.name = num.ToString(); // Set the name of the newly created bigger circle
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(this.gameObject.tag))
         {
-            // to prevent duplicated fruits, we find the smaller name and allow it to Destroy itself
-            // and make the bigger fruit before the bigger number is destroyed
+            // To prevent duplicate creation, first the smaller fruit is destroyed
+            // and then the bigger fruit is created.
+            // Finally the bigger of the two smaller fruits is destroyed.
             if (int.Parse(collision.gameObject.name) < int.Parse(gameObject.name))
             {
                 Destroy(this.gameObject);
-                switch (gameObject.tag)
-                {
-                    case "Cherry":
-                        scoreTracker.CherryScored();
-                        break;
-                    case "Strawberry":
-                        scoreTracker.StrawberryScored();
-                        break;
-                    case "Grape":
-                        scoreTracker.GrapeScored();
-                        break;
-                }
+                scoreTracker.Scored(gameObject.tag);
                 create_next_circle();
                 Destroy(collision.gameObject); // Destroy the smaller circle after collision
             }
