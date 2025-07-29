@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.95, y: 4.8, z: 0}
-  m_LocalScale: {x: 0.0881058, y: 0.0881058, z: 0.0881058}
+  m_LocalScale: {x: 0.06174251, y: 0.06174251, z: 0.06174251}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -168,4 +168,3 @@ MonoBehaviour:
   nextPrefab: {fileID: 7518558482597850793, guid: 91e408f07eca3498c9fe8d3ee4de9f8e, type: 3}
   mouseChecker: {fileID: 7065095978388095903, guid: 5fe6e92d7a4af456dabe63ac231d74d1, type: 3}
   scoreTracker: {fileID: 281737189157403192, guid: b6e290cea1c6a4632a589762fe5391a5, type: 3}
-  Fail: {fileID: 6189733673904488233, guid: 60dcd7a87813b4ca9a8048f6cd1cc55b, type: 3}
