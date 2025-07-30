@@ -25,6 +25,19 @@ public class ScoreTracker : MonoBehaviour
     int score = 0;
     public TMP_Text ScoreText;
 
+    void Start()
+    {
+        ResetCurrentScore();
+        UpdateScoreText();
+    }
+
+    public void Scored(string tag)
+    {
+        CircleType scoreValue = (CircleType)Enum.Parse(typeof(CircleType), tag);
+        score += (int)scoreValue;
+        UpdateScoreText();
+    }
+
     void UpdateScoreText()
     {
         ScoreText.text = "" + score.ToString();
@@ -33,10 +46,27 @@ public class ScoreTracker : MonoBehaviour
     /** Take the tag for the two fruits colliding, use that to get the Score from the above enum,
      *  Add the score to the total score, and update the UI text.
      */
-    public void Scored(string tag)
+
+    int GetHighScore()
     {
-        CircleType scoreValue = (CircleType)Enum.Parse(typeof(CircleType), tag);
-        score += (int)scoreValue;
-        UpdateScoreText();
+        return PlayerPrefs.GetInt("Highscore", 0);
+    }
+
+    public void SaveHighScore()
+    {
+        if (score > GetHighScore())
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+        }
+    }
+
+    public void SaveCurrentScore()
+    {
+        PlayerPrefs.SetInt("CurrentScore", score);
+    }
+
+    void ResetCurrentScore()
+    {
+        PlayerPrefs.SetInt("CurrentScore", 0);
     }
 }

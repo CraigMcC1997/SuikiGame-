@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class circle_controller : MonoBehaviour
 {
@@ -39,8 +40,9 @@ public class circle_controller : MonoBehaviour
         // if the fruits spill over the top then the game ends
         else if (collision.gameObject.name == "Danger Ground")
         {
-            Debug.Log("!! GAME OVER !!");
-            Destroy(gameObject); // Destroy the circle if it collides with the ground
+            scoreTracker.SaveHighScore();
+            scoreTracker.SaveCurrentScore();
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
